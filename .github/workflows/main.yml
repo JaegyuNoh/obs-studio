@@ -98,7 +98,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         shell: bash
         run: |
-          curl -L -O http//server.fbt-asso.org:25609/obs/obsdeps3.tar.gz
+          curl -L -O http://server.fbt-asso.org:25609/obs/obsdeps3.tar.gz
           tar -xf ./obsdeps3.tar.gz -C "/tmp"
       - name: 'Install prerequisite: Pre-built dependency Qt'
         if: steps.deps-qt-cache.outputs.cache-hit != 'true'
